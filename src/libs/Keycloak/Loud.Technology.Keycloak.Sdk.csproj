@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>Loud.Technology.Keycloak.Sdk</AssemblyName>
+    <RootNamespace>Loud.Technology.Keycloak.Sdk</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="NuGet">
+    <PackageId>Loud.Technology.Keycloak</PackageId>
+    <Title>Keycloak Admin REST API .NET SDK</Title>
+    <Description>Modern, strongly typed .NET SDK for the Keycloak Admin REST API, generated from OpenAPI with AutoSDK.</Description>
+    <PackageTags>keycloak;identity;iam;admin;rest;api;client;sdk;dotnet;openapi;autosdk</PackageTags>
+    <PackageProjectUrl>https://github.com/loud-technology/loud-technology-keycloak-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/loud-technology/loud-technology-keycloak-sdk.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+</Project>

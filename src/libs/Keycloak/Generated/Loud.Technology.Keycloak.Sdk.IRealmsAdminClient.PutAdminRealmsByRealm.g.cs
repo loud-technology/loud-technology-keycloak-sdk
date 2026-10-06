@@ -1,0 +1,330 @@
+#nullable enable
+
+#pragma warning disable CS0618 // Type or member is obsolete
+
+namespace Loud.Technology.Keycloak.Sdk
+{
+    public partial interface IRealmsAdminClient
+    {
+        /// <summary>
+        /// Update the top-level information of the realm Any user, roles or client information in the representation will be ignored.<br/>
+        /// This will only update top-level attributes of the realm.
+        /// </summary>
+        /// <param name="realm"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Loud.Technology.Keycloak.Sdk.ApiException"></exception>
+        global::System.Threading.Tasks.Task PutAdminRealmsByRealmAsync(
+            string realm,
+
+            global::Loud.Technology.Keycloak.Sdk.RealmRepresentation request,
+            global::Loud.Technology.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update the top-level information of the realm Any user, roles or client information in the representation will be ignored.<br/>
+        /// This will only update top-level attributes of the realm.
+        /// </summary>
+        /// <param name="realm"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Loud.Technology.Keycloak.Sdk.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Loud.Technology.Keycloak.Sdk.AutoSDKHttpResponse> PutAdminRealmsByRealmAsResponseAsync(
+            string realm,
+
+            global::Loud.Technology.Keycloak.Sdk.RealmRepresentation request,
+            global::Loud.Technology.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update the top-level information of the realm Any user, roles or client information in the representation will be ignored.<br/>
+        /// This will only update top-level attributes of the realm.
+        /// </summary>
+        /// <param name="realm"></param>
+        /// <param name="id"></param>
+        /// <param name="requestRealm"></param>
+        /// <param name="displayName"></param>
+        /// <param name="displayNameHtml"></param>
+        /// <param name="notBefore"></param>
+        /// <param name="defaultSignatureAlgorithm"></param>
+        /// <param name="revokeRefreshToken"></param>
+        /// <param name="refreshTokenMaxReuse"></param>
+        /// <param name="accessTokenLifespan"></param>
+        /// <param name="accessTokenLifespanForImplicitFlow"></param>
+        /// <param name="ssoSessionIdleTimeout"></param>
+        /// <param name="ssoSessionMaxLifespan"></param>
+        /// <param name="ssoSessionIdleTimeoutRememberMe"></param>
+        /// <param name="ssoSessionMaxLifespanRememberMe"></param>
+        /// <param name="offlineSessionIdleTimeout"></param>
+        /// <param name="offlineSessionMaxLifespanEnabled"></param>
+        /// <param name="offlineSessionMaxLifespan"></param>
+        /// <param name="clientSessionIdleTimeout"></param>
+        /// <param name="clientSessionMaxLifespan"></param>
+        /// <param name="clientOfflineSessionIdleTimeout"></param>
+        /// <param name="clientOfflineSessionMaxLifespan"></param>
+        /// <param name="accessCodeLifespan"></param>
+        /// <param name="accessCodeLifespanUserAction"></param>
+        /// <param name="accessCodeLifespanLogin"></param>
+        /// <param name="actionTokenGeneratedByAdminLifespan"></param>
+        /// <param name="actionTokenGeneratedByUserLifespan"></param>
+        /// <param name="oauth2DeviceCodeLifespan"></param>
+        /// <param name="oauth2DevicePollingInterval"></param>
+        /// <param name="enabled"></param>
+        /// <param name="sslRequired"></param>
+        /// <param name="registrationAllowed"></param>
+        /// <param name="registrationEmailAsUsername"></param>
+        /// <param name="rememberMe"></param>
+        /// <param name="verifyEmail"></param>
+        /// <param name="loginWithEmailAllowed"></param>
+        /// <param name="duplicateEmailsAllowed"></param>
+        /// <param name="resetPasswordAllowed"></param>
+        /// <param name="editUsernameAllowed"></param>
+        /// <param name="bruteForceProtected"></param>
+        /// <param name="permanentLockout"></param>
+        /// <param name="maxTemporaryLockouts"></param>
+        /// <param name="bruteForceStrategy"></param>
+        /// <param name="maxFailureWaitSeconds"></param>
+        /// <param name="minimumQuickLoginWaitSeconds"></param>
+        /// <param name="waitIncrementSeconds"></param>
+        /// <param name="quickLoginCheckMilliSeconds"></param>
+        /// <param name="maxDeltaTimeSeconds"></param>
+        /// <param name="failureFactor"></param>
+        /// <param name="maxSecondaryAuthFailures"></param>
+        /// <param name="roles"></param>
+        /// <param name="groups"></param>
+        /// <param name="defaultRole"></param>
+        /// <param name="adminPermissionsClient"></param>
+        /// <param name="defaultGroups"></param>
+        /// <param name="passwordPolicy"></param>
+        /// <param name="otpPolicyType"></param>
+        /// <param name="otpPolicyAlgorithm"></param>
+        /// <param name="otpPolicyInitialCounter"></param>
+        /// <param name="otpPolicyDigits"></param>
+        /// <param name="otpPolicyLookAheadWindow"></param>
+        /// <param name="otpPolicyPeriod"></param>
+        /// <param name="otpPolicyCodeReusable"></param>
+        /// <param name="otpSupportedApplications"></param>
+        /// <param name="localizationTexts"></param>
+        /// <param name="webAuthnPolicyRpEntityName"></param>
+        /// <param name="webAuthnPolicySignatureAlgorithms"></param>
+        /// <param name="webAuthnPolicyRpId"></param>
+        /// <param name="webAuthnPolicyAttestationConveyancePreference"></param>
+        /// <param name="webAuthnPolicyAuthenticatorAttachment"></param>
+        /// <param name="webAuthnPolicyRequireResidentKey"></param>
+        /// <param name="webAuthnPolicyResidentKey"></param>
+        /// <param name="webAuthnPolicyUserVerificationRequirement"></param>
+        /// <param name="webAuthnPolicyCreateTimeout"></param>
+        /// <param name="webAuthnPolicyAvoidSameAuthenticatorRegister"></param>
+        /// <param name="webAuthnPolicyAcceptableAaguids"></param>
+        /// <param name="webAuthnPolicyExtraOrigins"></param>
+        /// <param name="webAuthnPolicyPasswordlessRpEntityName"></param>
+        /// <param name="webAuthnPolicyPasswordlessSignatureAlgorithms"></param>
+        /// <param name="webAuthnPolicyPasswordlessRpId"></param>
+        /// <param name="webAuthnPolicyPasswordlessAttestationConveyancePreference"></param>
+        /// <param name="webAuthnPolicyPasswordlessAuthenticatorAttachment"></param>
+        /// <param name="webAuthnPolicyPasswordlessRequireResidentKey"></param>
+        /// <param name="webAuthnPolicyPasswordlessResidentKey"></param>
+        /// <param name="webAuthnPolicyPasswordlessUserVerificationRequirement"></param>
+        /// <param name="webAuthnPolicyPasswordlessCreateTimeout"></param>
+        /// <param name="webAuthnPolicyPasswordlessAvoidSameAuthenticatorRegister"></param>
+        /// <param name="webAuthnPolicyPasswordlessAcceptableAaguids"></param>
+        /// <param name="webAuthnPolicyPasswordlessExtraOrigins"></param>
+        /// <param name="webAuthnPolicyPasswordlessPasskeysEnabled"></param>
+        /// <param name="webAuthnPolicyPasswordlessMediation"></param>
+        /// <param name="clientProfiles"></param>
+        /// <param name="clientPolicies"></param>
+        /// <param name="users"></param>
+        /// <param name="federatedUsers"></param>
+        /// <param name="scopeMappings"></param>
+        /// <param name="clientScopeMappings"></param>
+        /// <param name="clients"></param>
+        /// <param name="clientScopes"></param>
+        /// <param name="defaultDefaultClientScopes"></param>
+        /// <param name="defaultOptionalClientScopes"></param>
+        /// <param name="browserSecurityHeaders"></param>
+        /// <param name="smtpServer"></param>
+        /// <param name="userFederationProviders"></param>
+        /// <param name="userFederationMappers"></param>
+        /// <param name="loginTheme"></param>
+        /// <param name="accountTheme"></param>
+        /// <param name="adminTheme"></param>
+        /// <param name="emailTheme"></param>
+        /// <param name="eventsEnabled"></param>
+        /// <param name="eventsExpiration"></param>
+        /// <param name="eventsListeners"></param>
+        /// <param name="enabledEventTypes"></param>
+        /// <param name="adminEventsEnabled"></param>
+        /// <param name="adminEventsDetailsEnabled"></param>
+        /// <param name="identityProviders"></param>
+        /// <param name="identityProviderMappers"></param>
+        /// <param name="protocolMappers"></param>
+        /// <param name="components"></param>
+        /// <param name="internationalizationEnabled"></param>
+        /// <param name="supportedLocales"></param>
+        /// <param name="defaultLocale"></param>
+        /// <param name="authenticationFlows"></param>
+        /// <param name="authenticatorConfig"></param>
+        /// <param name="requiredActions"></param>
+        /// <param name="browserFlow"></param>
+        /// <param name="registrationFlow"></param>
+        /// <param name="directGrantFlow"></param>
+        /// <param name="resetCredentialsFlow"></param>
+        /// <param name="clientAuthenticationFlow"></param>
+        /// <param name="dockerAuthenticationFlow"></param>
+        /// <param name="firstBrokerLoginFlow"></param>
+        /// <param name="attributes"></param>
+        /// <param name="keycloakVersion"></param>
+        /// <param name="userManagedAccessAllowed"></param>
+        /// <param name="organizationsEnabled"></param>
+        /// <param name="organizations"></param>
+        /// <param name="verifiableCredentialsEnabled"></param>
+        /// <param name="adminPermissionsEnabled"></param>
+        /// <param name="scimApiEnabled"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task PutAdminRealmsByRealmAsync(
+            string realm,
+            string? id = default,
+            string? requestRealm = default,
+            string? displayName = default,
+            string? displayNameHtml = default,
+            int? notBefore = default,
+            string? defaultSignatureAlgorithm = default,
+            bool? revokeRefreshToken = default,
+            int? refreshTokenMaxReuse = default,
+            int? accessTokenLifespan = default,
+            int? accessTokenLifespanForImplicitFlow = default,
+            int? ssoSessionIdleTimeout = default,
+            int? ssoSessionMaxLifespan = default,
+            int? ssoSessionIdleTimeoutRememberMe = default,
+            int? ssoSessionMaxLifespanRememberMe = default,
+            int? offlineSessionIdleTimeout = default,
+            bool? offlineSessionMaxLifespanEnabled = default,
+            int? offlineSessionMaxLifespan = default,
+            int? clientSessionIdleTimeout = default,
+            int? clientSessionMaxLifespan = default,
+            int? clientOfflineSessionIdleTimeout = default,
+            int? clientOfflineSessionMaxLifespan = default,
+            int? accessCodeLifespan = default,
+            int? accessCodeLifespanUserAction = default,
+            int? accessCodeLifespanLogin = default,
+            int? actionTokenGeneratedByAdminLifespan = default,
+            int? actionTokenGeneratedByUserLifespan = default,
+            int? oauth2DeviceCodeLifespan = default,
+            int? oauth2DevicePollingInterval = default,
+            bool? enabled = default,
+            string? sslRequired = default,
+            bool? registrationAllowed = default,
+            bool? registrationEmailAsUsername = default,
+            bool? rememberMe = default,
+            bool? verifyEmail = default,
+            bool? loginWithEmailAllowed = default,
+            bool? duplicateEmailsAllowed = default,
+            bool? resetPasswordAllowed = default,
+            bool? editUsernameAllowed = default,
+            bool? bruteForceProtected = default,
+            bool? permanentLockout = default,
+            int? maxTemporaryLockouts = default,
+            global::Loud.Technology.Keycloak.Sdk.BruteForceStrategy? bruteForceStrategy = default,
+            int? maxFailureWaitSeconds = default,
+            int? minimumQuickLoginWaitSeconds = default,
+            int? waitIncrementSeconds = default,
+            long? quickLoginCheckMilliSeconds = default,
+            int? maxDeltaTimeSeconds = default,
+            int? failureFactor = default,
+            int? maxSecondaryAuthFailures = default,
+            global::Loud.Technology.Keycloak.Sdk.RolesRepresentation? roles = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.GroupRepresentation>? groups = default,
+            global::Loud.Technology.Keycloak.Sdk.RoleRepresentation? defaultRole = default,
+            global::Loud.Technology.Keycloak.Sdk.ClientRepresentation? adminPermissionsClient = default,
+            global::System.Collections.Generic.IList<string>? defaultGroups = default,
+            string? passwordPolicy = default,
+            string? otpPolicyType = default,
+            string? otpPolicyAlgorithm = default,
+            int? otpPolicyInitialCounter = default,
+            int? otpPolicyDigits = default,
+            int? otpPolicyLookAheadWindow = default,
+            int? otpPolicyPeriod = default,
+            bool? otpPolicyCodeReusable = default,
+            global::System.Collections.Generic.IList<string>? otpSupportedApplications = default,
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, string>>? localizationTexts = default,
+            string? webAuthnPolicyRpEntityName = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicySignatureAlgorithms = default,
+            string? webAuthnPolicyRpId = default,
+            string? webAuthnPolicyAttestationConveyancePreference = default,
+            string? webAuthnPolicyAuthenticatorAttachment = default,
+            string? webAuthnPolicyRequireResidentKey = default,
+            string? webAuthnPolicyResidentKey = default,
+            string? webAuthnPolicyUserVerificationRequirement = default,
+            int? webAuthnPolicyCreateTimeout = default,
+            bool? webAuthnPolicyAvoidSameAuthenticatorRegister = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicyAcceptableAaguids = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicyExtraOrigins = default,
+            string? webAuthnPolicyPasswordlessRpEntityName = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicyPasswordlessSignatureAlgorithms = default,
+            string? webAuthnPolicyPasswordlessRpId = default,
+            string? webAuthnPolicyPasswordlessAttestationConveyancePreference = default,
+            string? webAuthnPolicyPasswordlessAuthenticatorAttachment = default,
+            string? webAuthnPolicyPasswordlessRequireResidentKey = default,
+            string? webAuthnPolicyPasswordlessResidentKey = default,
+            string? webAuthnPolicyPasswordlessUserVerificationRequirement = default,
+            int? webAuthnPolicyPasswordlessCreateTimeout = default,
+            bool? webAuthnPolicyPasswordlessAvoidSameAuthenticatorRegister = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicyPasswordlessAcceptableAaguids = default,
+            global::System.Collections.Generic.IList<string>? webAuthnPolicyPasswordlessExtraOrigins = default,
+            bool? webAuthnPolicyPasswordlessPasskeysEnabled = default,
+            string? webAuthnPolicyPasswordlessMediation = default,
+            global::Loud.Technology.Keycloak.Sdk.ClientProfilesRepresentation? clientProfiles = default,
+            global::Loud.Technology.Keycloak.Sdk.ClientPoliciesRepresentation? clientPolicies = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.UserRepresentation>? users = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.UserRepresentation>? federatedUsers = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ScopeMappingRepresentation>? scopeMappings = default,
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ScopeMappingRepresentation>>? clientScopeMappings = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ClientRepresentation>? clients = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ClientScopeRepresentation>? clientScopes = default,
+            global::System.Collections.Generic.IList<string>? defaultDefaultClientScopes = default,
+            global::System.Collections.Generic.IList<string>? defaultOptionalClientScopes = default,
+            global::System.Collections.Generic.Dictionary<string, string>? browserSecurityHeaders = default,
+            global::System.Collections.Generic.Dictionary<string, string>? smtpServer = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.UserFederationProviderRepresentation>? userFederationProviders = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.UserFederationMapperRepresentation>? userFederationMappers = default,
+            string? loginTheme = default,
+            string? accountTheme = default,
+            string? adminTheme = default,
+            string? emailTheme = default,
+            bool? eventsEnabled = default,
+            long? eventsExpiration = default,
+            global::System.Collections.Generic.IList<string>? eventsListeners = default,
+            global::System.Collections.Generic.IList<string>? enabledEventTypes = default,
+            bool? adminEventsEnabled = default,
+            bool? adminEventsDetailsEnabled = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.IdentityProviderRepresentation>? identityProviders = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.IdentityProviderMapperRepresentation>? identityProviderMappers = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ProtocolMapperRepresentation>? protocolMappers = default,
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.ComponentExportRepresentation>>? components = default,
+            bool? internationalizationEnabled = default,
+            global::System.Collections.Generic.IList<string>? supportedLocales = default,
+            string? defaultLocale = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.AuthenticationFlowRepresentation>? authenticationFlows = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.AuthenticatorConfigRepresentation>? authenticatorConfig = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.RequiredActionProviderRepresentation>? requiredActions = default,
+            string? browserFlow = default,
+            string? registrationFlow = default,
+            string? directGrantFlow = default,
+            string? resetCredentialsFlow = default,
+            string? clientAuthenticationFlow = default,
+            string? dockerAuthenticationFlow = default,
+            string? firstBrokerLoginFlow = default,
+            global::System.Collections.Generic.Dictionary<string, string>? attributes = default,
+            string? keycloakVersion = default,
+            bool? userManagedAccessAllowed = default,
+            bool? organizationsEnabled = default,
+            global::System.Collections.Generic.IList<global::Loud.Technology.Keycloak.Sdk.OrganizationRepresentation>? organizations = default,
+            bool? verifiableCredentialsEnabled = default,
+            bool? adminPermissionsEnabled = default,
+            bool? scimApiEnabled = default,
+            global::Loud.Technology.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
